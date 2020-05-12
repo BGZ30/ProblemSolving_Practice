@@ -35,7 +35,7 @@ void maxProductOfThree(sint16* arr, char length){
 
     sint64 maxProd_3 = arr[0] * arr[1] * arr[2];
 
-    char i = 2; // counter to go through the array, it starts from 2 as we already visted the first two elements
+    char i = 1; // counter to go through the array
     while(i<length){
         maxProd_3 = MAX3(maxProd_2*arr[i], minProd_2*arr[i], maxProd_3);
         maxProd_2 = MAX3(maxNum*arr[i], minNum*arr[i], maxProd_2);
